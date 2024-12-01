@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <style>
+        .container {
+            display: flex;
+            padding: 10px;
+        }
+
+        .card {
+            flex: 1 1 200px;
+            height: 200px;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="one"></div>
+        <div class="card" id="two"></div>
+        <div class="card" id="three"></div>
+    </div>
+</body>
+<script>
+    // comment
+    let refToContainer = document.querySelector(".container");
+    refToContainer.style.backgroundColor = "rgb(200,19,50)";
+    refToContainer.style.border = "5px dashed green";
+
+    let refToCard1 = document.querySelector("#one");
+    refToCard1.style.backgroundColor = "yellow";
+    refToCard1.style.border = "3px dotted green";
+
+    let refToCard2 = document.querySelector("#two");
+    refToCard2.style.backgroundColor = "purple";
+    refToCard2.style.border = "3px dotted green";
+
+    let refToCard3 = document.querySelector("#three");
+    refToCard3.style.backgroundColor = "orange";
+    refToCard3.style.border = "3px dotted purple";
+
+</script>
+</html>
